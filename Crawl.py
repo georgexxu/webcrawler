@@ -9,7 +9,7 @@ import json
 import pprint
 
 
-# In[35]:
+# In[48]:
 
 class search:
     # 初始化方法，定义一些变量
@@ -44,10 +44,17 @@ pages= search()
 ListOfRest=pages.getListOfRest()
 
 
-# In[38]:
+# In[69]:
 
 pp=pprint.PrettyPrinter()
-pp.pprint(ListOfRest)
+ListOfRest_=[]
+for key in ListOfRest:
+    ListOfRest_.append({k: key.get(k, None) for k in ('name','priceUI','reviewCount','shortenUrl')})
+
+
+# In[70]:
+
+ListOfRest_
 
 
 # In[ ]:
