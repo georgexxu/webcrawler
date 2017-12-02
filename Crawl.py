@@ -95,7 +95,7 @@ with open("ChineseRestaurant.csv",'w',encoding='utf8') as file:
 
 # In[61]:
 
-with open('ChineseRestaurant.csv', 'w',encoding="utf-8-sig") as csv_file:
+with open('ChineseRestaurant.csv', 'w',newline='',encoding="utf-8-sig") as csv_file:
     keys=ChineseRestaurant[0].keys()
     writer = csv.DictWriter(csv_file,keys)
     writer.writeheader()
