@@ -169,6 +169,7 @@ class search:
                     break
         with open('result.csv', 'w+') as csv_file:
             headers = [k for k in dictionarys[0]]
+            print(type(headers))
             writer = csv.DictWriter(csv_file, fieldnames=headers)
             writer.writeheader()
             for dictionary in dictionarys:
