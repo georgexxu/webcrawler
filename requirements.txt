@@ -6,7 +6,7 @@ cycler==0.10.0
 Cython==0.27.1
 future==0.16.0
 gym==0.9.4
-html5lib==0.9999999
+html5lib==0.99999999
 idna==2.6
 Markdown==2.6.9
 matplotlib==2.0.2
